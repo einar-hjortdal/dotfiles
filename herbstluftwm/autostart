@@ -20,6 +20,7 @@ hc keybind $Mod-Shift-c close
 
 TERMINAL=contour
 hc keybind $Mod-Return spawn "${TERMINAL:-xterm}" # use your $TERMINAL with xterm as fallback
+
 hc keybind $Mod-space spawn rlaunch \
   --font=sans-serif \
   --height=30 \
@@ -28,6 +29,8 @@ hc keybind $Mod-space spawn rlaunch \
   --color2=#cdd6f4 \
   --color3=#cdd6f4 \
   --color4=#89b4fa
+
+hc keybind $Mod-Print spawn bash -c 'xwd -root | xwdtopnm | pnmtopng > "${HOME}/Pictures/Screenshots/Screenshot_$(date +%Y%m%d_%H%M%S).png"'
 
 # basic movement in tiling and floating mode
 # focusing clients

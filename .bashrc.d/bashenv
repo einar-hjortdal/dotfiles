@@ -1,0 +1,6 @@
+PS1="\[\e[34m\]\u\[\e[0m\]\[\e[34m\]@\[\e[0m\]\[\e[34m\]\H\[\e[0m\] \[\e[33m\]\w\[\e[0m\] \$? \[\e[32m\]\$(git branch --show-current 2>/dev/null)\[\e[0m\]\n\[\e[34m\]\$\[\e[0m\] "
+
+SSH_AUTH_SOCK=/run/user/1001/ssh-agent.socket
+
+export WINEPREFIX=~/.wine
+export WINEARCH=win64

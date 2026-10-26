@@ -138,9 +138,12 @@ format_full = "<span foreground='#89dceb'>chom</span>"
 
 [panels.clock]
 type = "clock"
-precisions = ["seconds", "minutes"]
+precisions = ["minutes", "seconds"]
 # toggle seconds
-formats = ["<span>%Y-%m-%d %T</span>", "<span>%Y-%m-%d %H:%M</span>"]
+formats = [
+	"<span>%Y-%m-%d</span> <span foreground='#f9e2af'>%H:%M</span>",
+	"<span>%Y-%m-%d</span> <span foreground='#f9e2af'>%T</span>",
+]
 click_left = "cycle"
 click_right = "cycle_back"
 

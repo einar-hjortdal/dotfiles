@@ -1,4 +1,4 @@
 alias update='sudo dnf update --refresh --assumeyes && flatpak update --assumeyes'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias earbudscc='bluetoothctl connect 24:57:65:66:4A:BC'
+alias earbudsc='bluetoothctl connect 24:57:65:66:4A:BC'
 alias earbudsdc='bluetoothctl disconnect 24:57:65:66:4A:BC'

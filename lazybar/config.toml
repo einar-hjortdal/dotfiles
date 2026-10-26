@@ -19,20 +19,19 @@ panels_center = ["pulseaudio"]
 panels_right = ["network", "separator", "clock"]
 
 [attrs.none]
-bg = "none"
+color = "#1e1e2e"
 
 [attrs.manual]
-# bg = "manual"
-
-[attrs.mpd]
-bg = "none"
-fg = "#fff"
+color = "#1e1e2e"
 
 [attrs.active_blocks]
 bg = "active"
+fg = "#cdd6f4"
+
 [attrs.nonempty_blocks]
 bg = "nonempty"
-fg = "#89dceb"
+fg = "#f9e2af"
+
 [attrs.inactive_blocks]
 bg = "inactive"
 fg = "#6c7086"
@@ -40,15 +39,14 @@ fg = "#6c7086"
 [bgs.default]
 style = "bubble_prop"
 radius = 12
-color = "#000"
+color = "#1e1e2e"
 
 [bgs.manual]
 style = "bubble"
 border = 8
 radius = 12
-color = "#000"
+color = "#1e1e2e"
 
-# bubble backgrounds with a radius of 0 are rectangles
 [bgs.active]
 style = "bubble_prop"
 radius = 3
@@ -57,12 +55,12 @@ color = "#6c7086"
 [bgs.inactive]
 style = "bubble_prop"
 radius = 3
-color = "#0000"
+color = "#1e1e2e"
 
 [bgs.nonempty]
 style = "bubble_prop"
 radius = 0
-color = "#0000"
+color = "#1e1e2e"
 
 [bgs.none]
 style = "none"
@@ -76,28 +74,6 @@ attrs_inactive = "inactive_blocks"
 [panels.xwindow]
 type = "xwindow"
 max_width = 100
-
-[panels.temp]
-type = "temp"
-format = "<span foreground='#0ff'>TEMP</span> %temp%°C"
-zone = 7
-interval = 2
-
-# systray has known issues with bars that aren't transparent
-[panels.systray]
-type = "systray"
-size = 24
-padding = 0
-sort = "window_name_lower"
-
-[panels.memory]
-type = "memory"
-format = "<span foreground='#0ff'>RAM</span> %percentage_used%%"
-
-[panels.cpu]
-type = "cpu"
-format = "<span foreground='#0ff'>CPU</span> %percentage%%"
-interval = 2
 
 [panels.pulseaudio]
 type = "pulseaudio"
@@ -114,27 +90,6 @@ type = "network"
 if_name = "eth0"
 format_connected = "<span foreground='#a6e3a1'>connected</span>"
 format_disconnected = "<span foreground='#f38ba8'>disconnected</span>"
-
-[panels.mpd]
-type = "mpd"
-fg = "#fff"
-attrs = "mpd"
-progress_bar = true
-max_width = 30
-strategy = "scroll"
-scroll_interval = 300
-format_playing = "%shuffle% %main% <span font_size='20pt' rise='-5pt'>%prev% %toggle% %next%</span>"
-format_paused = "%shuffle% %main% <span font_size='20pt' rise='-5pt'>%prev% %toggle% %next%</span>"
-format_main = "%title% - %artist%"
-format_shuffle = "<span font_size='25pt' rise='-7.5pt'>󰒟</span>"
-format_prev = "󰒮"
-format_toggle_playing = "󰏤"
-format_toggle_paused = "󰐊"
-format_next = "󰒭"
-
-[panels.battery]
-type = "battery"
-format_full = "<span foreground='#89dceb'>chom</span>"
 
 [panels.clock]
 type = "clock"
@@ -154,10 +109,10 @@ format = "   "
 dependence = "left"
 
 [ramps.pa]
-0 = "<span font_size='20pt' rise='-7.5pt'>󰕿</span>"
-1 = "<span font_size='20pt' rise='-7.5pt'>󰖀</span>"
-2 = "<span font_size='20pt' rise='-7.5pt'>󰕾</span>"
+0 = "<span font_size='20pt' rise='-5pt'>󰕿</span>"
+1 = "<span font_size='20pt' rise='-5pt'>󰖀</span>"
+2 = "<span font_size='20pt' rise='-5pt'>󰕾</span>"
 
 [ramps.pa_muted]
-0 = "<span font_size='20pt' rise='-7.5pt'>󰸈</span>"
-1 = "<span font_size='20pt' rise='-7.5pt'>󰖁</span>"
+0 = "<span font_size='20pt' rise='-5pt'>󰸈</span>"
+1 = "<span font_size='20pt' rise='-5pt'>󰖁</span>"

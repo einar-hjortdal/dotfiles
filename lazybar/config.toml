@@ -94,7 +94,6 @@ format_disconnected = "<span foreground='#f38ba8'>disconnected</span>"
 [panels.clock]
 type = "clock"
 precisions = ["minutes", "seconds"]
-# toggle seconds
 formats = [
 	"<span>%Y-%m-%d</span> <span foreground='#f9e2af'>%H:%M</span>",
 	"<span>%Y-%m-%d</span> <span foreground='#f9e2af'>%T</span>",
